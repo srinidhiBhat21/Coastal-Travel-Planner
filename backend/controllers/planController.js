@@ -29,7 +29,7 @@ exports.addPlan = async (req, res) => {
       days.forEach((day) => {
         day.places.forEach((place) => {
           if (req.files[fileIndex]) {
-            place.image = `http://localhost:5000/uploads/${req.files[fileIndex].filename}`;
+            place.image = `http://coastal-travel-backend.onrender.com/uploads/${req.files[fileIndex].filename}`;
             fileIndex++;
           }
         });
